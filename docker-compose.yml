@@ -48,7 +48,7 @@ services:
 
   huey:
     image: adenylyl/pi-day-puzzle-hunt # re-use above image
-    command: bash -c "python /code/manage.py migrate --no-input && python /code/manage.py run_huey --quiet"
+    command: bash -c "python /code/manage.py makemigrations && python /code/manage.py migrate --fake --no-input && python /code/manage.py run_huey --quiet"
     restart: always
     volumes:
       - .:/code

@@ -134,7 +134,7 @@ LOGGING = {
         'file': {
             'level': 'INFO',
             'class': 'logging.FileHandler',
-            'filename': './docker/volumes/logs/django.log',
+            'filename': '.docker/volumes/logs/django.log',
             'formatter': 'verbose',
         },
     },

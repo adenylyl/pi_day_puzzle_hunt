@@ -20,3 +20,9 @@ debug.log
 /docker/volumes/redis_data/
 /docker/volumes/logs/
 *.env
+
+# Text backup files
+*.bak
+
+# Database
+*.sqlite3

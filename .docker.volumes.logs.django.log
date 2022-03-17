@@ -1,0 +1,32 @@
+ERROR 2022-03-17 05:12:43,040 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\lynna\Documents\ibchem1--junioryear\puzzlehunt_server-master\huntserver\info_views.py", line 17, in index
+    curr_hunt = Hunt.objects.get(is_current_hunt=True)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+huntserver.models.Hunt.DoesNotExist: Hunt matching query does not exist.
+ERROR 2022-03-17 05:12:43,044 basehttp "GET / HTTP/1.1" 500 79634
+ERROR 2022-03-17 05:13:05,559 log Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\lynna\Documents\ibchem1--junioryear\puzzlehunt_server-master\huntserver\info_views.py", line 17, in index
+    curr_hunt = Hunt.objects.get(is_current_hunt=True)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\lynna\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+huntserver.models.Hunt.DoesNotExist: Hunt matching query does not exist.
+ERROR 2022-03-17 05:13:05,560 basehttp "GET / HTTP/1.1" 500 79769

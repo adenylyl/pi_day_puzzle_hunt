@@ -1,0 +1,12 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+    - plan: heroku-redis
+
+build:
+  docker:
+    web: Dockerfile
+
+run: 
+  web: gunicorn puzzlehunt_server.wsgi --log-file -

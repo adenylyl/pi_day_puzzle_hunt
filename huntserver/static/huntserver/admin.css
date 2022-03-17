@@ -1,0 +1,175 @@
+/* 
+  This file is for huntserver specific page styling.
+  Contents do not get applied to included django admin pages 
+*/
+
+/* Global */
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    margin: 1px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: inline-block;}
+
+
+table.table-bordered.team-list {
+  width:400px;
+  word-break: break-word;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+table.table-bordered {
+    border:1px solid black;
+    margin-top:20px;
+}
+table.table-bordered > thead > tr > th {
+    border:1px solid black;
+}
+table.table-bordered > tbody > tr > td {
+    border:1px solid black;
+}
+table.table-bordered > thead > tr > td {
+    border:1px solid black;
+}
+
+/* Queue */
+#queue {
+  width: 100%; }
+
+  #queue tbody .success td {
+    background-color: #c8ffb0; }
+
+  #queue tbody .warning td {
+    background-color: #f4f5b6; }
+
+  #queue tbody .danger td {
+    background-color: #ffc5c5; }
+
+
+/* Progress */
+.actions {
+  text-align: center;
+}
+
+table.table.table-condensed > thead > tr > td {
+    vertical-align: middle;
+}
+table.table.table-condensed > tbody > tr > td {
+    vertical-align: middle;
+}
+
+#table-container {
+  overflow: scroll;
+  height: calc(100vh - 180px);
+}
+
+.progress-thead>tr>td {
+  padding: 3px;
+}
+
+.progress-thead>tr>th {
+  background-color: whitesmoke;
+  text-align: center;
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  box-shadow: black 1px 0px 0 1px
+}
+
+.leftmost {
+  background-color: whitesmoke;
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+  box-shadow: black 0px 1px 0 1px;
+}
+
+.leftmost.topmost {
+  z-index: 10;
+}
+
+#progress {
+  font-size: 80%; }
+
+#progress .solved {
+  background: hsla(128, 100%, 75%, 1);; }
+
+#progress .available {
+    background: hsla(55, 100%, 75%, 1); }
+
+.sort_select {
+  display: inline;
+  width: 150px;
+  margin-bottom: 5px;
+  -webkit-appearance: menulist;
+}
+
+
+.sort_label {
+  margin-left: 20px;
+}
+
+select {
+  -webkit-appearance: menulist;
+}
+
+/* Management */
+.list-group.list-group-root {
+    padding: 0;
+    overflow: hidden;
+}
+
+.list-group.list-group-root .list-group {
+    margin-bottom: 0;
+}
+
+.list-group.list-group-root .list-group-item {
+    border-radius: 0;
+    border-width: 1px 0 0 0;
+}
+
+.list-group.list-group-root > .list-group-item:first-child {
+    border-top-width: 0;
+}
+
+.list-group.list-group-root > .list-group > .list-group-item {
+    padding-left: 45px;
+}
+
+.list-group-item .glyphicon {
+    margin-right: 5px;
+}
+
+.list-group-item button .glyphicon {
+    margin-right: 0px;
+}
+
+.download-btn {
+  padding: 3px 12px 1px 12px;
+  margin-top: -2px;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    width:inherit;
+    max-width:inherit;
+    height:inherit;
+    margin: 0 auto;
+    pointer-events: all;
+}

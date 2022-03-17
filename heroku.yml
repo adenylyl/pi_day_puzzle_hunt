@@ -1,7 +1,7 @@
 setup:
   addons:
     - plan: heroku-postgresql
-      as: DATABASE
+      as: DATABASES
     - plan: heroku-redis
 
 build:
